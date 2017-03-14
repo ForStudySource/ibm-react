@@ -63,5 +63,9 @@
        1. data-types
        2. execution context
        3. function-depth
-
        4. 'this' keyword
+       5. closures
+
+
+
+
