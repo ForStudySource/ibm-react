@@ -1,0 +1,67 @@
+
+
+
+.js lang
+
+  --> scripting lang for web-pages in browser-envi(client)
+  +
+  --> server-side lang Node.js
+
+  --> Mobile applications
+
+  //---------------------------------------
+
+
+  .js lang features
+
+  --> functional pgming lang
+  --> OOP
+
+  --> dynamic typed
+  --> closures support
+
+  --> single-threaded lang , can implement concurrency
+  --> Non-Blocking IO
+
+  ----------------------------------
+
+
+  .js lang is based on ECMAScript spec
+
+
+   latest : ECMAScript-2015 or ES6
+
+   -------------------------------
+
+
+
+   How to run .js programs?
+
+
+    we need 'JS-engine'
+
+    browser envi
+
+      1. chrome ( v8 ===> c++)
+      2. firefox ( rhino ==> java)
+      3. IE ( chakra )
+      4. Safari ( Nitro )
+
+      ...
+
+    other envi
+
+       1. Node.js  ==> v8
+       2. JVM ==> nashorn
+       .........
+
+       ------------------------------
+
+       TOC
+       -------
+       
+       1. data-types
+       2. execution context
+       3. function-depth
+
+       4. 'this' keyword
