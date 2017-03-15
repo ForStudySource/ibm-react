@@ -65,7 +65,26 @@
        3. function-depth
        4. 'this' keyword
        5. closures
+       6. inheritance
+       7. objects - depth
 
+
+       ES6  
+       ---------
+
+       => New- syntax
+
+           a. let & const keywords & block-scope
+           b. arrow functions
+           c. rest & spread operators
+           d. function default params
+           e. destructuring
+           f. string interpolation
+           g. octal and binary representation
+           h. object literal extensions
+
+        ------------------------------------   
+       
 
 
 
