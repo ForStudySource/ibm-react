@@ -68,6 +68,40 @@
        6. inheritance
        7. objects - depth
 
+       8. concurrency-model
+
+
+
+          .js-lang is
+
+          --> single-threaded lang
+          --> Non blocking IO
+
+             ??
+
+          -------------------------------
+
+           browser e.g chrome
+
+            1. JS-engine
+
+                  a. single-call-stack  ==> to execute context(s)
+                  b. heap   ==> to keep objects
+
+            2. browser APIs
+
+                  e.g  DOM,XHR,Timer, HTMl5 APIs
+           
+            3. callback/message/event queue
+
+            4. Event-Loop 
+
+
+
+
+
+
+
 
        ES6  
        ---------
@@ -83,7 +117,16 @@
            g. octal and binary representation
            h. object literal extensions
 
-        ------------------------------------   
+
+           i. class syntax 
+       
+      ------------------------------------  
+
+
+       
+
+
+
        
 
 
