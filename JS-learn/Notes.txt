@@ -158,43 +158,74 @@
 
           --> using .js Libraries and F.Ws
             
-
-
              1. jQuery ==> DOM utility lib
-
 
              2. React from Facebook ==>  UI libray
 
-
+             many...
           ---------------------------------------------------   
-
 
           10. JS-modules
 
+                  popular .js-module standards
+
+                  1. AMD ( Async Module Definition )  spec
+
+                        define(mid,[],factory);  ==> to define new-module
+                        require(config,[],callback); ==> to require/import/load module
+
+                  2. commonJS
+
+                        points
+
+                         --> every .js file is an module by default
+                         --> all the var/func are private to that by default.
+                         --> to abstract any member to other modules , use 'module.exports'
+                         --> to import any meber from other module , use 'require()'
+
+                         imp-note: Node.js implements commonJS as default module standard
+
+                  3. ES6 modules
+
+                         --> every .js file is module
+                         --> all the var/func are private to that by default.
+                         --> to abstract any member to other modules , use 'export'
+                         --> to import any meber from other module , use 'import'
+
+                  4. SystemJS
+
+
+            ------------------------------------------------------   
+
+            11. Build Tools
+
+
+            
 
 
 
 
 
 
-       ES6  
-       ---------
-
-       => New- syntax
-
-           a. let & const keywords & block-scope
-           b. arrow functions
-           c. rest & spread operators
-           d. function default params
-           e. destructuring
-           f. string interpolation
-           g. octal and binary representation
-           h. object literal extensions
 
 
-           i. class syntax 
-       
-      ------------------------------------  
+
+                  ES6  
+                  ---------
+
+                  => New- syntax
+
+                  a. let & const keywords & block-scope
+                  b. arrow functions
+                  c. rest & spread operators
+                  d. function default params
+                  e. destructuring
+                  f. string interpolation
+                  g. octal and binary representation
+                  h. object literal extensions
+                  i. class syntax 
+                  
+            ------------------------------------  
 
 
        
