@@ -97,6 +97,80 @@
             4. Event-Loop 
 
 
+           --------------------------------------------
+
+
+           9. .js-lang with browser-side apps
+
+                    
+            wat .js can do on browser with HTML-pages?
+
+
+            using browser provied APIs, 
+            .js-lang can bring any dynamic activity to web-page.
+
+            browser provied APIs e.g  DOM,XHR,Timer , etc... are based on w3c standards
+
+            using DOM
+            ----------
+            --> can create,retreive/update/delete HTML elements
+            --> can change element's attributes
+            --> can change element's style
+            --> can change element's context
+            --> can change element's inner-content
+            --> can listen events on elements
+            --> can create rich UI components
+
+            using XHR
+            -----------
+            --> can communicate with server async, update resp in current-page ( AJAX )
+
+            using TimerAPI
+            --------------
+            setTimeout()
+            setInterval()
+
+            HTMl5 - APIs
+            -------------
+
+            ref : https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5
+
+
+             caniuse.com     
+
+
+        ------------------------------------------------
+
+
+        complexities of plain-js
+
+
+        --> browser compatibility
+        --> performance issues ( e.g DOM manipulation )
+        --> memory managenet ( e.g cleaning un-used DOM elements ,)
+
+        --> too much code for simple oprns
+        --> code organization is difficult
+
+        ---------------------------------------------------
+
+        soln :
+
+          --> using .js Libraries and F.Ws
+            
+
+
+             1. jQuery ==> DOM utility lib
+
+
+             2. React from Facebook ==>  UI libray
+
+
+          ---------------------------------------------------   
+
+
+          10. JS-modules
+
 
 
 
