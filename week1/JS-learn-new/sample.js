@@ -24,7 +24,7 @@ console.log(bar(7)); // bar-context
 // --------------------------------------------
 
 function foo() {
-    
+
 }
 function bar() {
     foo();
@@ -47,6 +47,8 @@ function baz() {
 }
 baz();
 
+
+
 // --------------------------------------------
 
 function foo() {
@@ -58,7 +60,7 @@ foo();
 // --------------------------------------------
 
 function f1() {
-    
+
     var i = 0;
     while (i < 10) {
         console.log('murgaih...');
@@ -87,10 +89,10 @@ f2();
 
 console.log('hello...');
 
-$.on('.boy', 'click', function boyHandler() { 
+$.on('.boy', 'click', function boyHandler() {
     console.log('handling event on boy eleemnts...');
 });
-$.on('.girl', 'click', function girlHandler() { 
+$.on('.girl', 'click', function girlHandler() {
     console.log('handling event on girls eleemnts...');
 });
 
@@ -108,10 +110,10 @@ while (i < 100) {
 
 */
 
-$.on('#tom', 'click', function () { 
+$.on('#tom', 'click', function () {
     console.log('start...');
-    // e.g 
-    setTimeout(function () { 
+    // e.g
+    setTimeout(function () {
         console.log('after timeout tom working...');
     },5000);
 
@@ -119,9 +121,3 @@ $.on('#tom', 'click', function () {
 });
 
 // --------------------------------------------
-
-
-
-
-
-
