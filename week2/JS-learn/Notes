@@ -107,3 +107,39 @@
 
 
           */
+
+          ------------------------------------
+
+          Ex-1
+
+         in employee-package
+
+          --> create Employee class ( es5 or es6)
+
+               id 
+               name
+               salary
+
+               - doListen() : instance method
+               - doTrain()  : static methos
+
+          in hr-package     
+
+          --> create HR class 
+
+               - doManageEmployees()
+
+                  --> creaet couple of employees
+                  --> doTrain()
+                  --> doListen() them individially
+
+          ---------------------------------------------
+          in root-package
+
+          --> main-module  ( index.js) 
+
+             - call HR functionality
+
+         -------------------------------------------       
+
+               
