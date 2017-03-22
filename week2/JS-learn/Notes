@@ -79,3 +79,31 @@
             1. ES6 New-Features
             ------------------------------------------
 
+
+
+          /*
+
+              Naming conventions
+              ----------------------
+
+              1.Type ==> Class , Constructor-Function
+
+                  --> pascal-case  e.g A____B___
+              
+              2. var/method
+              
+                  --> camel-case  e.g  _____A___B___
+
+              3. constants
+
+                  --> upper-case
+
+              4. file-name
+
+                  if module container only class , use class-name as file-name
+                      else
+                      
+                  --> lower-case   
+
+
+          */
