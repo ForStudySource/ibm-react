@@ -121,7 +121,7 @@
                salary
 
                - doListen() : instance method
-               - doTrain()  : static methos
+               
 
           in hr-package     
 
@@ -130,7 +130,6 @@
                - doManageEmployees()
 
                   --> creaet couple of employees
-                  --> doTrain()
                   --> doListen() them individially
 
           ---------------------------------------------
