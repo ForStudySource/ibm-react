@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ButtonFrame extends Component {
     render() {
 
-        let { checkAnswer,acceptAnswer,correct } = this.props;   
+        let { checkAnswer,acceptAnswer,correct,redraw,redraws } = this.props;   
         let button;
         switch (correct) {
             case true:
@@ -30,6 +30,15 @@ class ButtonFrame extends Component {
         return (
             <div id="button-frame">
                 {button}
+
+                <br/><br/>
+                <button
+                        className="btn btn-xs btn-warning"
+                        onClick={() => {redraw()}}>
+                    <span className="glyphicon glyphicon-refresh"></span>
+                    &nbsp;{redraws} 
+                </button>
+
             </div>
         );
     }
