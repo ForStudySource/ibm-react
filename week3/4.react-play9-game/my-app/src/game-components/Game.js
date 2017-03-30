@@ -112,9 +112,20 @@ class Game extends Component {
         }
     }
 
+    restart() {
+        this.setState({
+            selectedNumbers: [],
+            usedNumbers:[],
+            numOfStars: (Math.floor(Math.random() * 9)) + 1,
+            correct: null,
+            redraws: 5,
+            doneStatus:null
+        });
+    }
+
 
     render() {
-        let { selectedNumbers,usedNumbers,numOfStars,correct,redraws } = this.state;
+        let { selectedNumbers,usedNumbers,numOfStars,correct,redraws,doneStatus } = this.state;
         return (
             <div>
                 <div className="page-header"> Play-9</div>
@@ -129,7 +140,9 @@ class Game extends Component {
                         selectedNumbers={selectedNumbers} />
                 </div>    
                 <NumbersFrame selectedNumbers={selectedNumbers}
-                    usedNumbers={usedNumbers}    
+                    usedNumbers={usedNumbers}
+                    doneStatus={doneStatus}
+                    restart={this.restart.bind(this)}
                     selectNumber={this.selectNumber.bind(this)} />
             </div>
         );
