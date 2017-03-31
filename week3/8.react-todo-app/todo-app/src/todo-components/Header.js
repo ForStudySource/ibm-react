@@ -4,7 +4,7 @@ import TodoTextInput from './TodoTextInput'
 
 class Header extends Component {
 
-    submitHandler(text) {
+    handleSubmit(text) {
         if (text) {
             this.props.addTodo(text);
         }
@@ -14,7 +14,10 @@ class Header extends Component {
         return (
             <header>
                 <h1>todos</h1>
-                <TodoTextInput onSubmitHandler={(text) => { this.submitHandler(text) }}/>
+                <TodoTextInput
+                    newTodo={true}
+                    placeHolder={"What needs to be dome?"}
+                    onSubmit={(text) => { this.handleSubmit(text) }} />
             </header>
         );
     }

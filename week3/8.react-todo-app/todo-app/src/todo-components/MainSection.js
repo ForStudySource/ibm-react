@@ -9,12 +9,13 @@ class MainSection extends Component {
     
     render() {
 
-        let { todos,deleteTodo,completeTodo,completeAll} = this.props;       
+        let { todos,deleteTodo,completeTodo,completeAll,editTodo} = this.props;       
         
         let todoComps = todos.map((todo,idx) => { 
             return <TodoItem key={idx}
                              todo={todo}
                              deleteTodo={deleteTodo}
+                             editTodo={editTodo}
                              completeTodo={completeTodo} />
         });
 
@@ -39,7 +40,8 @@ MainSection.propTypes = {
     todos: PropTypes.array.isRequired,
     deleteTodo: PropTypes.func.isRequired,
     completeTodo: PropTypes.func.isRequired,
-    completeAll : PropTypes.func.isRequired
+    completeAll: PropTypes.func.isRequired,
+    editTodo : PropTypes.func.isRequired
 };
 
 export default MainSection;

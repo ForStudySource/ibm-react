@@ -47,16 +47,27 @@ class App extends Component {
     });
     this.setState({todos});
   }
+  _editTodo(id,newText) {
+    let { todos } = this.state;
+    todos = todos.map(todo => { 
+      return todo.id === id ? Object.assign({}, todo, { text: newText }) : todo;
+    });
+    this.setState({todos});
+  }
+
+
    
   render() {
     let { todos } = this.state;
     return (
       <div className="todoapp">
         <Header addTodo={(text) => { this._addTodo(text) }}/>
-        <MainSection todos={todos}
+        <MainSection
+          todos={todos}
           deleteTodo={(id) => { this._deleteTodo(id) }}
           completeTodo={(id) => { this._completeTodo(id) }}
-          completeAll={() => { this._completeAll()}}
+          completeAll={() => { this._completeAll() }}
+          editTodo={(id,newText) => { this._editTodo(id,newText)}}
         />
       </div>
     );
