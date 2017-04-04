@@ -4,6 +4,9 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
+// import BasicExample from './my-components/BasicExample';
+import ParamsExample from './my-components/ParamsExample';
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +16,8 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="page-header">React Router demo</div>
+
+        <ParamsExample />
 
       </div>
     );
