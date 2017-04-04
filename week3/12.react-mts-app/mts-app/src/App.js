@@ -93,8 +93,7 @@ class App extends Component {
               <hr/>
               <Route path="/accounts" component={() => <AccountList accounts={accounts}/>}/>
               <Route path="/txr-form" component={() => { return <TxrForm txrStatus={txrStatus} onSubmit={(from, to, amount) => { this._doTxr(from, to, amount); }} /> }} />
-              <Route path="/txn-list/:acc_num" component={({ match }) => { let account = _.find(accounts, function (account) { return account.num === match.params.acc_num; }); return <AccountTxnHistory txns={account.txns} /> }}/>
-              
+              <Route path="/accounts/txn-list/:acc_num" component={({ match }) => { let account = _.find(accounts, function (account) { return account.num === match.params.acc_num; }); return <AccountTxnHistory txns={account.txns} /> }}/>
             </div>
 
           </Router>

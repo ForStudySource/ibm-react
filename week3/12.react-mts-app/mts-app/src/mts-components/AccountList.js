@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Account from './Account';
+// import _ from 'lodash';
 
 // import {
 //   BrowserRouter as Router,
@@ -31,6 +32,7 @@ class AccountList extends Component {
     }    
 
     render() {
+        let { accounts } = this.props;
         return (
             <div>
                 <div className="page-header">Account List</div>
@@ -43,7 +45,7 @@ class AccountList extends Component {
                         {this._renderAccounts()}
                     </tbody>    
                 </table>    
-
+            
             </div>
         );
     }

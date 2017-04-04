@@ -12,7 +12,7 @@ class Account extends Component {
                 <td>&#8377;{account.balance}</td>
                 <td>{account.type}</td>
                 <td>{account.status}</td>
-                <td><Link to={`/txn-list/${account.num}`}><span className="glyphicon glyphicon-list"></span></Link></td>
+                <td><Link to={`/accounts/txn-list/${account.num}`}><span className="glyphicon glyphicon-list"></span></Link></td>
             </tr>
         );
     }
